@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Bebas Neue';
+  box-sizing: border-box;
+  outline: none;
+  box-sizing: border-box;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.5s linear;
+}
+
+body, h1, h2, h3, p, ul, li{
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  height: 120vh;
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e5e5e5 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  
+  
+  
+}
+
+
+
+html{
+  font-size: 70%;
+  overflow:  auto;
+  font-family: 'Bebas Neue';
+  scroll-padding-top: 9rem;
+
+}
+
+
+html::-webkit-scrollbar{
+  width: .8rem;
+}
+
+
+html::-webkit-scrollbar-track{
+ background: transparent;
+}
+
+
+html::-webkit-scrollbar-thumb{
+ background: #010101;
+ border-radius: 5rem;
+}
+
+#main-header{
+    position: fixed;
+    background-color: transparent;
+    padding: 1rem  10% ;
+    height: 10rem;
+    align-items: center;
+    justify-content: space-between;
+    top: 0; 
+    left: 0;
+    right: 0; 
+    z-index: 1000;
+    
+}
+
+.header .logo img{
+   width: 30%;
+   height: auto;
+  
+}
+.navbar-nav{
+  margin-top: 3rem;
+  margin-right: 40rem;
+
+  
+}
+
+.navbar-nav .nav-link{
+   margin: 0.8rem;
+   color: #020202;
+   font-family: 'Bebas Neue';
+   letter-spacing: 0.2rem;
+   font-size: 1.9rem;
+   cursor: pointer;
+   font-weight: 500;
+   
+  
+  
+}
+
+
+
+
+
+
+.header .nav-link.active,
+.header .nav-link:hover{
+   border-bottom: .2rem solid rgb(179, 141, 2);
+}
+
+.header .cart-icon{
+  color: #020202;
+  margin-left: auto;
+  margin-right: -10rem;
+  margin-top: -3rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+  width: 3rem;
+  
+}
+
+.header  .quantity{
+     display: flex;
+     font-size: 1.5rem;
+     width: 1.5rem;
+     height: 1.5rem;
+     margin-right: -10rem;
+     background-color: red;
+     margin-top: -2rem;
+     font-family: 'Bebas Neue';
+     justify-content: center;
+     align-items: center;
+     color: #fdfcfb;
+     border-radius: 50%;
+     position: absolute;
+     top: 68%;
+     right: 0.7rem;
+  
+}
+
+
+ 
+
+.header .icons .fa-shopping-cart{
+  color: #020202;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: color 0.5s;
+}
+
+
+.header .icons .fa-shopping-cart:hover{
+  color: rgb(179, 141, 2);
+  
+}
+
+
+.hour-icon {
+  width: 70%;
+  display: flex;
+   margin-left: -28rem;
+  margin-top: -4rem;
+}
+
+
+.hour-text p{
+   font-size: 1.3rem;
+   margin-left: -25rem;
+   margin-top: -1.8rem;
+}
+
+
+
+.header .icons .login-icon {
+  margin-left: 4rem; 
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.header .icons p {
+  color: #020202;
+  margin-top: -3rem;
+  font-size: 1.9rem; 
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+  margin-left: 9rem; 
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.header .icons p:hover{
+   color: rgb(179, 141, 2);
+}
+
+/*===HOMAPAGE START =======*/
+
+.hero-image img{
+   max-width: 100%;
+   height: auto;
+   margin-top: -5rem;
+   margin-right: 15rem;
+   
+  
+  
+}
+
+.container{
+  margin-top: 20rem;
+  margin-left: 22rem;
+  margin-right: auto;
+  margin-bottom: 10rem;
+}
+
+.shop-name{
+    font-size: 30rem;
+}
+
+.container .head-title{
+  font-size: 10rem;
+  
+  
+
+}
+
+.container .head-title span{
+   font-size: 6rem;
+   font-weight: 650;
+  
+   color:  rgb(179, 141, 2);
+   
+
+}
+
+
+
+.container .head-text{
+   font-size: 1.5rem;
+   font-family: 'Montserrat';
+  
+
+}
+
+
+.buy-btn{
+    font-family: 'Bebas Neue';
+    background-color: rgb(179, 141, 2);
+    color: #fcfcfc;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    padding: 2rem 5rem;
+    font-size: 1.3rem;
+    transition: 0.5s;
+}
+
+
+.buy-btn:hover{
+   background-color: rgb(68, 54, 0);
+}
+
+
+.learnmore-btn{
+  font-family: 'Bebas Neue';
+  background-color: transparent;
+  border: 1px solid rgb(179, 141, 2);
+  color: rgb(179, 141, 2);
+  font-weight: 600;
+  border-radius: 5px;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  padding: 2rem 5rem;
+  font-size: 1.3rem;
+  transition: 0.5s;
+}
+
+.learnmore-btn:hover{
+  background-color: rgb(68, 54, 0);
+  color: #fcfcfc;
+}
+
+
+/* Mobile Styles  portrait*/
+@media (max-width: 576px) {
+  .navbar-nav {
+    margin-left: 2rem;
+  }
+
+  .container {
+    margin-top: 25rem;
+    
+    
+  }
+  .header{
+    margin-top: 15rem;
+  }
+  .hero-image img{
+    margin-top: 3rem;
+  }
+  .buy-btn{
+    font-size: 1.5rem;
+  }
+  .head-title{
+    font-size: 2rem;
+  }
+
+
+
+  /* Add more responsive styles as needed */
+}
+
+
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-nav {
+    margin-left: 5rem;
+  }
+
+  .container {
+    margin-top: 20rem;
+  }
+
+ 
+
+  /* Add more responsive styles as needed */
+
+  
+}
+
+
+
+
+/* Desktop Styles */
+@media (max-width: 992px) {
+  .navbar-nav {
+    margin-left: 6rem;
+  }
+
+  .container {
+    margin-top: 22rem;
+  }
+
+  /* Add more responsive styles as needed */
+}
+
+
+/*======ABOUT SECTION ======*/
+
+
+.abt-section{
+  height: 125vh;
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e5e5e5 100%);
+  
+  
+
+       
+}
+
+hr{
+   margin: auto;
+   width: 50%;
+   text-align: center;
+}
+
+
+
+
+
+/*
+.container .supp-hero .supp{
+  max-width: 15%;
+  height: auto;
+  margin-top: -14rem;
+  margin-left: 20rem;
+
+}
+*/
+
+.container2{
+  text-align: center;
+  align-items: center;
+  
+
+}
+
+.container2 .abt-title{
+   font-size: 4rem;
+   margin-top: 10rem;
+}
+
+
+.container2  .title-p, span{
+   font-size: 2rem;
+   letter-spacing: 1px;
+
+}
+
+.container2   span{
+  color: rgb(179, 141, 2);
+}
+
+
+ .abt-hero img{
+  max-width: 20%;
+  height: auto;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 0% 100%);
+  margin-top: -25rem;
+  margin-left: -40rem;
+  margin-bottom: 5rem;
+  
+}
+
+
+.abt-content{
+   text-align: right;
+   margin-right: 38rem;
+}
+
+.abt-content .abt-header2{
+   font-size: 2.5rem;
+   margin-top: 9rem;
+}
+
+
+.abt-content .para{
+   font-family: 'Bebas Neue'; 
+   font-size: 1rem;
+   
+}
+
+.abt-content .abt-header3{
+   margin-top: 5rem;
+   letter-spacing: 1px;
+
+}
+
+
+/* ========= MENU START ============= */
+
+
+
+.menu-section{
+   height: 130vh;
+   background-image: linear-gradient(135deg, #fdfcfb 0%, #e5e5e5 100%);
+   background-size: cover;
+   background-repeat: no-repeat;
+   padding: 20px;
+}
+
+.heading h2{
+   text-align: center;
+   margin-top: 5rem;
+   font-size: 4rem;
+}
+
+
+.heading  h3 {
+  margin-top: 2em;
+  text-align: center;
+  font-family: 'Bebas Neue';
+  letter-spacing: 1px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  
+}
+
+.heading  h3 span{
+  color: rgb(179, 141, 2);
+  font-weight: 700;
+  font-size: 2.5rem;
+  font-family: 'Bebas Neue';
+}
+
+
+.coffee-menu{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
+   gap: 2rem;
+   margin-top: 5rem;
+   align-items: center;
+   justify-content: center;
+   transition: transform .5s
+   
+
+}
+
+
+
+.coffee-menu .box{
+  position: relative;
+  margin: 2rem;
+  display: grid;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 0.5rem;
+  box-shadow: 10px 10px 20px -2px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 20px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 20px -2px rgba(0,0,0,0.75);
+}
+
+
+
+
+.coffee-menu .box img{
+   width: 100%;
+   height: auto;
+   object-fit: contain;
+   object-position: center;
+   border-radius: 0.5rem;
+   
+}
+
+.coffee-menu .content3{
+     text-align: center;
+     margin: 3rem;
+     height: 120px;
+  
+}
+
+.coffee-menu .name{
+  margin-bottom: 0;
+}
+
+
+.coffee-menu  .price{
+  color: rgb(68, 54, 0);
+  font-size: 2rem;
+  margin-bottom: 0;
+  text-align: center;
+  font-family: 'Bebas Neue';
+  align-items: center;
+  margin-left: 2.2rem;
+  justify-content: center;
+  position: absolute;
+  margin-top: 0.4rem;
+ 
+  
+  
+   
+
+}
+
+
+
+.coffee-menu .content3  .addCart{
+  padding:  0.7rem 1.5rem;
+  background-color: rgb(179, 141, 2);
+  color: #fdfcfb;
+  font-family: 'Bebas Neue';
+  margin-top: 4rem;
+  border-radius: 5px;
+  font-weight: 550;
+  margin: 1rem;
+  margin-right: -3.7rem;
+  transition: 0.5s;
+
+}
+
+
+.coffee-menu .content3  .addCart:hover{
+  background-color: rgb(68, 54, 0);
+  color: #fcfcfc;
+
+}
+
+
+.coffee-menu .content3  .order-btn{
+  padding:  0.7rem 1.5rem;
+  background-color:  #fcfcfc;
+  color: rgb(68, 54, 0);
+  font-weight: 550;
+  border-radius: 5px;
+  border:  1px solid #474747;
+  font-family: 'Bebas Neue';
+  margin-top: 4rem;
+  margin-left: -4rem;
+  transition: 0.5s;
+
+}
+
+.coffee-menu .content3  .order-btn:hover{
+  background-color: rgb(68, 54, 0);
+  color: #fcfcfc;
+
+}
+
+
+.coffee-menu  .arrowLeft{
+  float: left;
+  font-size: 4rem;
+  cursor: pointer;
+  margin-left: -3rem;
+  margin-top: -20rem;
+}
+
+.coffee-menu  .arrowRight{
+  float: right;
+  font-size: 4rem;
+  cursor: pointer;
+  margin-right: -3rem;
+  margin-top: -20rem;
+}
+
+
+.coffee-menu   .showmore{
+  padding:  0.7rem 1.5rem;
+  background-color: rgb(179, 141, 2);
+  color: #fdfcfb;
+  font-family: 'Bebas Neue';
+    margin-top: 40rem;
+    margin-left: 65rem;
+   position:  absolute;
+   transition: 0.5s;
+}
+
+.coffee-menu   .show-more:hover{
+  background-color: rgb(68, 54, 0);
+  color: #fcfcfc;
+}
+
+
+
+
