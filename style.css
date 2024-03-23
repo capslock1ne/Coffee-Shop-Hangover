@@ -118,7 +118,7 @@ html::-webkit-scrollbar-thumb{
   
 }
 
-.header  .quantity{
+.header  .quantity-count{
      display: flex;
      font-size: 1.5rem;
      width: 1.5rem;
@@ -474,9 +474,12 @@ hr{
 .coffee-menu{
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
-   gap: 2rem;
+   gap: 4rem;
    margin-top: 5rem;
    align-items: center;
+   text-align: center;
+   margin-left: 10rem;
+   margin-right: 10rem;
    justify-content: center;
    transition: transform .5s
    
@@ -489,7 +492,7 @@ hr{
   position: relative;
   margin: 2rem;
   display: grid;
-  width: 20rem;
+  min-width: 20rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -505,7 +508,7 @@ hr{
 .coffee-menu .box img{
    width: 100%;
    height: auto;
-   object-fit: contain;
+   object-fit: cover;
    object-position: center;
    border-radius: 0.5rem;
    
@@ -545,8 +548,9 @@ hr{
 
 .coffee-menu .content3  .addCart{
   padding:  0.7rem 1.5rem;
-  background-color: rgb(179, 141, 2);
-  color: #fdfcfb;
+  background-color:  #fcfcfc;
+  color: rgb(68, 54, 0);
+  border:  1px solid  rgb(68, 54, 0);
   font-family: 'Bebas Neue';
   margin-top: 4rem;
   border-radius: 5px;
@@ -567,8 +571,8 @@ hr{
 
 .coffee-menu .content3  .order-btn{
   padding:  0.7rem 1.5rem;
-  background-color:  #fcfcfc;
-  color: rgb(68, 54, 0);
+  background-color: rgb(179, 141, 2);
+  color: #fdfcfb;
   font-weight: 550;
   border-radius: 5px;
   border:  1px solid #474747;
@@ -590,16 +594,16 @@ hr{
   float: left;
   font-size: 4rem;
   cursor: pointer;
-  margin-left: -3rem;
-  margin-top: -20rem;
+  margin-left: -22rem;
+  margin-top: -45rem;
 }
 
 .coffee-menu  .arrowRight{
   float: right;
   font-size: 4rem;
   cursor: pointer;
-  margin-right: -3rem;
-  margin-top: -20rem;
+  margin-right: -177rem;
+  margin-top: -45rem;
 }
 
 
@@ -608,8 +612,8 @@ hr{
   background-color: rgb(179, 141, 2);
   color: #fdfcfb;
   font-family: 'Bebas Neue';
-    margin-top: 40rem;
-    margin-left: 65rem;
+   margin-top: 42rem;
+   margin-left: 60rem;
    position:  absolute;
    transition: 0.5s;
 }
@@ -618,7 +622,5 @@ hr{
   background-color: rgb(68, 54, 0);
   color: #fcfcfc;
 }
-
-
 
 
