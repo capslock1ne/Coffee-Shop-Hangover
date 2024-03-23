@@ -5,9 +5,9 @@ export function addToCart(productName){
     let matchingItem;
           
         /*check the product if it's already in the cart*/
-         cart.forEach((cartitem) =>{
-            if (productName === cartitem.productName){
-                matchingItem = cartitem;
+         cart.forEach((cartItem) =>{
+            if (productName === cartItem.productName){
+                matchingItem = cartItem;
             }
          });
 
@@ -19,4 +19,16 @@ export function addToCart(productName){
                 quantity: 1
              });
          }
+}
+
+
+export function updateCartQuantity(){
+    let cartQuantity = 0;
+
+    cart.forEach((cartItem) =>{
+        cartQuantity +=  cartItem.quantity ;
+    });
+     
+    document.querySelector('.js-quantity-count').innerHTML = 
+    cartQuantity;
 }
