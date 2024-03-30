@@ -1,12 +1,30 @@
-export const cart = [];
+export const cart = [{
+    productId: 'product1',
+    quantity: 0,
+},{
+    productId: 'product2',
+    quantity: 0,
+},{
+    productId: 'product3',
+    quantity: 0,
+},{
+    productId: 'product4',
+    quantity: 0,
 
-export function addToCart(productName){
+},{
+    productId: 'product5',
+    quantity: 0
+}];
+
+
+
+export function addToCart(productId){
 
     let matchingItem;
           
         /*check the product if it's already in the cart*/
          cart.forEach((cartItem) =>{
-            if (productName === cartItem.productName){
+            if (productId === cartItem.productId){
                 matchingItem = cartItem;
             }
          });
@@ -15,7 +33,7 @@ export function addToCart(productName){
             matchingItem.quantity += 1;
          }else{
             cart.push({
-                productName: productName,
+                productId: productId,
                 quantity: 1
              });
          }
