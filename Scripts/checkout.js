@@ -51,12 +51,13 @@ document.querySelectorAll('.js-minus')
 .forEach((link) => {
     link.addEventListener('click',  () => {
      const productId = link.dataset.productId
-     console.log(productId);
+     
      removeFromCart(productId);
      
 
-     document.querySelector
+    const container = document.querySelector
      (`.js-cart-item-container-${productId}`);
+      container.remove();
     });
 });
 
