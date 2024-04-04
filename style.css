@@ -639,17 +639,17 @@ hr{
     margin-bottom: 1rem;
 
 }
-
-hr{
-  margin-bottom: 2rem;
-  margin-right: 70rem;
+.top-hr {
+  color: #010101;
   width: 70%;
 }
+
 
 .cart-container .row .col h2{
     position: relative;
     background-color: #BFBFBF;
     width: 70%;
+    border-radius: 1rem;
     margin-right: 70rem;
     padding: 1rem;
 
@@ -661,7 +661,7 @@ hr{
   display: flex;
   align-items: center;
   margin-left: 25rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 
@@ -700,6 +700,93 @@ hr{
  
 }
 
+.edit-btn{
+  margin-left: -50rem;
+  margin-top: -4rem;
+}
+.edit-btn .minus, .plus{
+  padding:  0.2rem 1.7rem;
+  background-color: #BFBFBF;
+  font-size: 2rem;
+  transition: .3s;
 
+}
+.edit-btn .minus:hover, .plus:hover{
+   background-color: #686868;
+   color: #010101;
+
+}
+
+.checkout-summary-container{
+  width: 40%;
+  height: 50%;
+  border-radius: 1rem;
+  background-color: #1f1f1f;
+  float: right;
+  margin-right: -10rem;
+  margin-top: -77rem;
+}
+
+.checkout-summary-container .title-page{
+   color: #BFBFBF;
+   font-size: 2.5rem;
+   margin-left: 2rem;
+   letter-spacing: 1px;
+}
+ hr{
+  background-color: #BFBFBF;
+  width: 100%;
+  margin-top: 2rem;
+}
 
  
+.payment-summary .sub-total, .shipping-fee {
+  color: #BFBFBF;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  margin-left: 2rem;
+  letter-spacing: 1px;
+}
+
+.shipping-fee{
+  margin-bottom: -0.1rem;
+}
+ 
+.payment-summary span{
+ float: right;
+ color: rgb(179, 141, 2);
+ margin-right: 2rem;
+}
+
+
+.payment-total{
+  margin-top: 10rem;
+  margin-left: 2rem;
+}
+.payment-total .total-price,.total-value{
+   font-size: 2.5rem;
+   color: #BFBFBF;
+}
+
+.place-order-btn{
+  margin-left: 9rem;
+}
+
+.place-order-btn .place-btn{
+  padding:  0.7rem 4rem;
+  background-color: rgb(179, 141, 2);
+  color: #fdfcfb;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  border-radius: 1rem;
+}
+
+.delivery-time i{
+  margin-top: 0.5rem;
+   font-size: 1rem;
+   letter-spacing: 1px;
+   display: inline-block;
+   margin-left: 2rem;
+   color: rgb(179, 141, 2);
+}

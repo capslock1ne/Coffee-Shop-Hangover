@@ -1,19 +1,19 @@
-export const cart = [{
+export let cart = [{
     productId: 'product1',
-    quantity: 0,
+    quantity: 1,
 },{
     productId: 'product2',
-    quantity: 0,
+    quantity: 1,    
 },{
     productId: 'product3',
-    quantity: 0,
+    quantity: 1,
 },{
     productId: 'product4',
-    quantity: 0,
+    quantity: 1,
 
 },{
     productId: 'product5',
-    quantity: 0
+    quantity: 1
 }];
 
 
@@ -49,4 +49,19 @@ export function updateCartQuantity(){
      
     document.querySelector('.js-quantity-count').innerHTML = 
     cartQuantity;
+}
+
+
+export function removeFromCart(productId){
+    const newCart = [];
+
+    cart.forEach((cartItem) => {
+     if(cartItem.productId !== productId){
+        newCart.push(cartItem);
+     }
+
+    });
+
+    cart = newCart;
+
 }

@@ -1,5 +1,8 @@
-import {cart} from '../data/cart.js';
+import {cart, removeFromCart} from '../data/cart.js';
 import {product} from '../data/product.js';
+import {formatCurrency} from './utils.js/money.js';
+
+
 
 
 cart.forEach((cartItem) => {
@@ -14,9 +17,12 @@ cart.forEach((cartItem) => {
 
    
 
+   
+   
    document.querySelector('.js-order-summary')
-   .innerHTML  += `
-    
+   .innerHTML   += `
+   <div class="order-summary js-order-summary 
+   js-cart-item-container-${matchingProduct.id}">
 <div class="cart-product">
     <div class="product-image">
         <img src="${matchingProduct.image}">
@@ -25,14 +31,32 @@ cart.forEach((cartItem) => {
         <p class="product-name">${matchingProduct.name}</p>
         <p class="product-quantity">Quantity: ${cartItem.quantity}</p>
         <div class="price">
-        <p class="product-price">$${(matchingProduct.priceCents / 100).toFixed(2)}</p>
+        <p class="product-price">$${formatCurrency(matchingProduct.priceCents)}</p>
         </div>
         
     
     </div>
-
-    
+    <div class="edit-btn">
+    <button class="minus js-minus" 
+    data-product-id="${matchingProduct.id}" >-</button>
+    <button class="plus js-plus" >+</button>
+  </div>
+  </div>
     `;
+    
 });
+
+
+document.querySelectorAll('.js-minus')
+.forEach((link) => {
+    link.addEventListener('click',  () => {
+     const productId = link.dataset.productId
+     console.log(productId);
+     removeFromCart(productId);
+     
+    });
+});
+
+
 
 
