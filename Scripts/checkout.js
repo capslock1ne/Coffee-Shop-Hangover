@@ -54,6 +54,9 @@ document.querySelectorAll('.js-minus')
      console.log(productId);
      removeFromCart(productId);
      
+
+     document.querySelector
+     (`.js-cart-item-container-${productId}`);
     });
 });
 
