@@ -9,6 +9,7 @@ cart.forEach((cartItem) => {
     const productId = cartItem.productId;
 
    let matchingProduct;
+
    product.forEach((product) =>{
     if (product.id === productId){
         matchingProduct = product;
@@ -18,10 +19,10 @@ cart.forEach((cartItem) => {
    
 
    
-   
-   document.querySelector('.js-order-summary')
+
+   document.querySelector('.js-order-list')
    .innerHTML   += `
-   <div class="order-summary js-order-summary 
+   <div class="order-summary js-order-summary
    js-cart-item-container-${matchingProduct.id}">
 <div class="cart-product">
     <div class="product-image">
@@ -37,29 +38,39 @@ cart.forEach((cartItem) => {
     
     </div>
     <div class="edit-btn">
-    <button class="minus js-minus" 
-    data-product-id="${matchingProduct.id}" >-</button>
+    <button class="minus js-minus-link" 
+    data-product-id="${matchingProduct.id}">-</button>
     <button class="plus js-plus" >+</button>
   </div>
   </div>
+
+
+
     `;
+
+
+    
     
 });
 
 
-document.querySelectorAll('.js-minus')
-.forEach((link) => {
-    link.addEventListener('click',  () => {
-     const productId = link.dataset.productId
-     
-     removeFromCart(productId);
-     
 
-    const container = document.querySelector
-     (`.js-cart-item-container-${productId}`);
-      container.remove();
+document.querySelectorAll('.js-minus-link').forEach
+((link) => {
+    link.addEventListener('click', (event) =>  {
+        event.stopPropagation();
+        const productId = link.dataset.productId;
+        removeFromCart(productId);
+       
+
+        const container = document.querySelector
+        (`.js-cart-item-container-${productId}`);
+         container.remove();
+         
+       
     });
 });
+
 
 
 

@@ -626,11 +626,11 @@ hr{
 /*===CART SECTION ====*/
 
 .cart-container{
-   margin-top: 21rem;
    display: flex;
-   justify-content: center;
+   padding-top: 22rem;
+   float: left;
+   margin-left: 25rem;
    flex-direction: column;
-   align-items: center;
 }
 
 .cart-container .row .col h1{
@@ -717,33 +717,42 @@ hr{
 
 }
 
-.checkout-summary-container{
-  width: 40%;
-  height: 50%;
+.checkout-container {
+  width: 25%;
+  height: 60%;
   border-radius: 1rem;
   background-color: #1f1f1f;
-  float: right;
-  margin-right: -10rem;
-  margin-top: -77rem;
+  margin-top: 3rem;
+  margin-right: 15rem; 
+  position: absolute; 
+  right: 8rem;
+  top: 22rem;
+  
 }
 
-.checkout-summary-container .title-page{
-   color: #BFBFBF;
+
+.checkout-container .title-page{
+  
+  color: #BFBFBF;
    font-size: 2.5rem;
+   margin-top: 1rem;
    margin-left: 2rem;
    letter-spacing: 1px;
 }
+
+
  hr{
   background-color: #BFBFBF;
   width: 100%;
+  position: absolute;
   margin-top: 2rem;
 }
 
- 
+
 .payment-summary .sub-total, .shipping-fee {
   color: #BFBFBF;
   font-size: 1.5rem;
-  margin-top: 1rem;
+  margin-top: 3rem;
   margin-bottom: 3rem;
   margin-left: 2rem;
   letter-spacing: 1px;
