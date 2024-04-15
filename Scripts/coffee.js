@@ -2,7 +2,8 @@
 
 import {cart, addToCart, updateCartQuantity} from '../data/cart.js';
 import {product, ProductElement} from '../data/product.js';
-import {formatCurrency} from './utils.js/money.js';
+import { transparentHeader } from '../data/transparent-header.js';
+import {formatCurrency } from './utils.js/money.js';
 
 
 let productsHTML = '';
@@ -30,7 +31,7 @@ product.forEach((product) => {
 productsHTML += `
         <i class="${ProductElement.Arrow1}"></i>
         <i class="${ProductElement.Arrow2}"></i>
-        <button class="showmore">${ProductElement.Showbtn}</button>
+        <button class="show-more">${ProductElement.Showbtn}</button>
         `;
 
 
@@ -53,7 +54,7 @@ document.querySelectorAll('.js-add-to-cart')
 });
 
 
-
+transparentHeader();
 
 
 

@@ -61,7 +61,7 @@ html::-webkit-scrollbar-thumb{
 #main-header{
     position: fixed;
     background-color: transparent;
-    padding: 1rem  10% ;
+    padding: 1rem 10% ;
     height: 10rem;
     align-items: center;
     justify-content: space-between;
@@ -108,10 +108,11 @@ html::-webkit-scrollbar-thumb{
 }
 
 .header .cart-icon{
-  color: #020202;
+  color: #020202 !important; 
   margin-left: auto;
   margin-right: -10rem;
-  margin-top: -3rem;
+  margin-top: 0.5rem;
+  outline: none ;
   font-size: 1.8rem;
   cursor: pointer;
   width: 3rem;
@@ -125,7 +126,7 @@ html::-webkit-scrollbar-thumb{
      height: 1.5rem;
      margin-right: -10rem;
      background-color: red;
-     margin-top: -2rem;
+     margin-top: -1.3rem;
      font-family: 'Bebas Neue';
      justify-content: center;
      align-items: center;
@@ -138,34 +139,22 @@ html::-webkit-scrollbar-thumb{
 }
 
 
+
  
 
-.header .icons .fa-shopping-cart{
-  color: #020202;
-  font-size: 1.8rem;
-  cursor: pointer;
-  transition: color 0.5s;
-}
-
-
-.header .icons .fa-shopping-cart:hover{
-  color: rgb(179, 141, 2);
-  
-}
-
-
+/*
 .hour-icon {
   width: 70%;
   display: flex;
    margin-left: -28rem;
   margin-top: -4rem;
 }
-
+*/
 
 .hour-text p{
    font-size: 1.3rem;
    margin-left: -25rem;
-   margin-top: -1.8rem;
+   margin-top: 2rem;
 }
 
 
@@ -197,13 +186,14 @@ html::-webkit-scrollbar-thumb{
    max-width: 100%;
    height: auto;
    margin-top: -5rem;
-   margin-right: 15rem;
-   
+   margin-left: -15rem;
+
   
   
 }
 
 .container{
+  max-width: 100%;
   margin-top: 20rem;
   margin-left: 22rem;
   margin-right: auto;
@@ -453,6 +443,8 @@ hr{
 }
 
 
+
+
 .heading  h3 {
   margin-top: 2em;
   text-align: center;
@@ -491,9 +483,11 @@ hr{
 .coffee-menu .box{
   position: relative;
   margin: 2rem;
-  display: grid;
-  min-width: 20rem;
+  display: grid;  
+  width: 100%;
+  height: 90%;
   display: flex;
+  overflow: hidden;
   flex-direction: column;
   justify-content: center;
   border-radius: 0.5rem;
@@ -503,11 +497,16 @@ hr{
 }
 
 
+.coffee-menu .box .image-wrapper{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
 
-
-.coffee-menu .box img{
+.coffee-menu  img{
    width: 100%;
-   height: auto;
+   height: 100%;
    object-fit: cover;
    object-position: center;
    border-radius: 0.5rem;
@@ -607,7 +606,7 @@ hr{
 }
 
 
-.coffee-menu   .showmore{
+.coffee-menu   .show-more{
   padding:  0.7rem 1.5rem;
   background-color: rgb(179, 141, 2);
   color: #fdfcfb;
