@@ -2,8 +2,8 @@
 export function transparentHeader(){
     document.addEventListener('DOMContentLoaded', function() {
         window.addEventListener('scroll', function () {
-            var header = document.getElementById('main-header');
-            var scrollPosition = window.scrollY;
+            const header = document.getElementById('main-header');
+            const scrollPosition = window.scrollY;
     
             if (scrollPosition > 100) {
                 header.style.backgroundColor = '#FFF';
@@ -24,4 +24,7 @@ export function transparentHeader(){
     
     
 }
+
+
+
 

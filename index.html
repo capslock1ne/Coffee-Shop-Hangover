@@ -1,308 +1,393 @@
-  <!doctype html>
-  <html lang="en">
+<!doctype html>
+<html lang="en">
     <head>
-      <!-- Required meta tags -->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="path/to/bootstrap-icons.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!--Custom CSS-->
+        <link rel="stylesheet" href="./style.css">
+        <!--Ionicons-->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <!--Font awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap" rel="stylesheet">
+        <!--Transition Effect-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!--Boxicons-->
+        <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
+        <!--Bootstrap icon-->
+        <!--Remix icon-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
+        
+        <title>Coffee shop web</title>
+         <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
 
-
-      <!-- Bootstrap CSS -->
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-      <!--Custome CSS-->
-    <link rel="stylesheet" href="./style.css">
-      <!--Font awesome-->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
-      
-  
-
-  
-
-      <title>Coffee shop web</title>
+         <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
     </head>
-    <body class="showCart">
-       <div class="showOverlay"></div>
-    
-      <!--HEADER START-->
-        
-      <header class="header d-flex justify-content-center align-items-center" id="main-header">
-
-        <a href="#" class="logo"> <img src="./Assets/images/Coffee_Shop-removebg-preview.png"></a>
-        
-
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <div class="container-fluid">
-              
-              
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          
-      
-          <div class="collapse navbar-collapse custom-navbar-collapse" id="navbarNav">
-
-                  <ul class="navbar-nav">
-                      <li class="nav-item"><a href="#home" class="nav-link active">HOME</a></li>
-                      <li class="nav-item"><a href="#about" class="nav-link ">ABOUT</a></li>
-                      <li class="nav-item"><a href="#products" class="nav-link">MENU</a></li>
-                      <li class="nav-item"><a href="#review" class="nav-link">RESERVATIONS</a></li>
-                      <li class="nav-item"><a href="#review" class="nav-link">CONTACT</a></li>
-                  </ul>
-
-                  
-                    
-
-            
-                  <div class="cart-icon">
-                    <a class="cart-link header-link" href="checkout.html">
-                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                      <path stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.3L19 7H7.3"/>
-                    </svg>
-                    <span class="quantity-count js-quantity-count">0</span>
-                  </a>
-                  <!--
-                    <div class="hour-icon">
-                      <svg  aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-                        d="M12 8v4l3 3m6-3a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
-
-                      </svg>
-                      -->
-                     
-                    </div>
-                    <div class="hour-text">
-                      <p> Opens from 06:00 AM to 19:00 PM</p>
-                   </div>
-                    <!--
-                    <span class="login-icon"><i class="fas fa-sign-in-alt">
-                    
-                    </i><p>Login</p></span>
-                     -->
-                   
-                </div>
-              </div>
-      
-              
-          </div>
-      </nav>
-      
-        
-          
-            </header>
-          
-    <!--===HOME PAGE START===-->
-    <div class="container">
-      <div class="row">
-          <div class="col-md-6">
-              <!-- Content for the left side -->
-              <h1 class="head-title"> HANGOVER <br><span>" Take a sip ".</span> </h1>
-              <p class="head-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem expedita harum voluptatum voluptatibus labore laboriosam modi? Ducimus vero optio sint modi maiores dolores deleniti illum culpa. Vitae reiciendis alias pariatur?</p>
-              <button class="buy-btn">Purchse Now </button>
-              <button class="learnmore-btn"> Learn More</button>
-          </div>
-          <div class="col-md-6">
-              <!-- Content for the right side -->
-              <div class="hero-image">
-                <img src="./Assets/images/heroimng.png" class="img-fluid" alt="Responsive image">
-
-              </div>
-          </div>
-      </div>
-  </div>
-
-          
-      
-      
-    
-
-  <!--===HOME PAGE END===-->
-
-      
-      <!--===ABOUT SECTION START====-->
-      <section class="abt-section" id="about">
-
-        <div class="container2">
-          <div class="row">
-            <div class="content">
-              <h1 class="abt-title">ABOUT HANGOVER</h1>
-              <hr >
-              <p class="title-p">HOME/<span>ABOUT US</span></p>
-
-              <div class="abt-content">
-                <h3 class="abt-header2"> THE BEST COFFEE IN 
-                  YOUR HOME TOWN
-                </h3>
-                <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br>  Sit, nam saepe est obcaecati  obcaecati labore<br> quia asperiores rem nam!</p>
-
-                <div class="abt-header3">
-                  <h4><span class="checkmarked">✓</span> What is Lorem Ipsum Lorem Ipsum is simply.</h4>
-            
-                  <h4><span class="checkmarked">✓</span>What is Lorem Ipsum Lorem Ipsum is simply.</h4>
-    
-                  <h4><span class="checkmarked">✓</span>What is Lorem Ipsum Lorem Ipsum is simply.</h4>
-                </div>
-                
-              
-              </div>
     
     
-              
-              </div>
-              
-              
-            <!--
-            <div class="supp-hero">
-              <img src="./Assets/images/support.png" class="supp">
+    <title>Coffee shop web</title>
+  </head>
 
-            </div>
-            
-            -->
-            <div class="abt-hero">
-              <img src="./Assets/images/HH.jpg">
-      
-            </div>
+
+  <body class="showCart">
+     <div class="showOverlay"></div>
   
+    <!--HEADER START-->
+      
+    <header class="header d-flex justify-content-center align-items-center" id="main-header">
+
+      <a href="index.html" class="logo"> 
+        <img src="Assets/images/Logo-c.png">
+      </a>
+      
+
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse custom-navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>        
+              <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+              <li class="nav-item"><a href="#reservation" class="nav-link">Reservation</a></li>
+              <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+            </ul>
           </div>
         </div>
-          
+      </nav>
       
-    
-          <!--Menu Start-->
-            <section class="menu-section" id="menu">
+                
+                  <div class="cart-icon">
+                    <img src="Assets/images/cart-icon.png" alt="">
+                    <a class="cart-link header-link" href="checkout.html">
+                      
   
-              <div class="heading">
-                <h2> Our Menu</h2>
-                <hr >
+                    <div class="cart-badge">
+                      <span class="quantity-count js-quantity-count">0</span>
+                    </div>
+                    </a>
+                  </div>
+            
+                  <div class="hour-text">
+                    <p> Opens from 06:00 AM to 19:00 PM</p>
+                 </div>
+       
+              <div class="login-container">
+              <a href="login.html" class="login-icon">
+                  <i class="fas fa-sign-in-alt"></i>
+                   <p>Login</p>
+                   </a>
+                    </div>
 
-                <h3>"Consider <span>purchasing now!"</span></h3>
+                   
+               
+                 
               </div>
+            </div>
+    
+            
+        </div>
+    </nav>
+    
+      
+        
+          </header>
+        
+  <!--===HOME PAGE START===-->
+  
+       <div class="carousel-container" id="home">
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
 
-         
-              <div class="coffee-menu js-menu">
-
-                <div class="col">
-                  <div class="row">
-             
+          <div class="carousel-inner ">
+              <div class="carousel-item active">
                     
-               
+                  <h1 class="head-title"> HANGOVER <br><span>"TAKE ONE SIP."</span></h1>
+                   <a href="#menu"><button class="shop-now-btn">Shop now <i class="bi bi-cart4"></i></button></a>
+                  <img src="Assets/images/hero-img.png" class="hero-image" alt="slide1">
 
-                    <div class="box">
-                      <div class="image-wrapper">
-                        <img src="./Assets/images/cafe-americano.jpg">
-                      </div>
+                  </div>
+              <div class="carousel-item">
+                
                      
-                      <div class="content3">
-                        <h3 class=" product-name">Americano</h3>
-                        <span class="product-price ">$2.10</span>
-                        <button class="order-btn">Order</button>
-                        <button class="addCart">Add to Cart</button>
-                        
-                      </div>
-                  </div>
-
-
-                    <div class="box">
-                      <div class="image-wrapper">
-                        <img src="./Assets/images/coffee espresso.jpg">
-                      </div>
-                      
-                      <div class="content3">
-                        <h3 class="product-name">Espresso</h3>
-                        <span class="product-price ">$3.11</span>
-                        <button class="order-btn">Order</button>
-                        <button class="addCart">Add to Cart</button>
-                        
-                      </div>
-                  </div>
-
-
-                    <div class="box">
-                      <div class="image-wrapper">
-                        <img src="./Assets/images/coffee-latte.jpg">
-                      </div>
-                      
-                      <div class="content3">
-                        <h3 class="product-name">Latte</h3>
-                        <span class="product-price ">$2.90</span>
-                        <button class="order-btn">Order</button>
-                        <button class="addCart">Add to Cart</button>
-                        
-                      </div>
-                  </div>
-                    <div class="box">
-                      <div class="image-wrapper">
-                        <img src="./Assets/images/flat-white.jpg">
-                      </div>
-                      
-                      <div class="content3">
-                        <h3 class="product-name">Flat White</h3>
-                        <span class="product-price ">$2.90</span>
-                        <button class="order-btn">Order</button>
-                        <button class="addCart">Add to Cart</button>
-                        
-                      </div>
-                  </div>
-
-
-                  <div class="box">
-                    <div class="image-wrapper">
-                      <img src="./Assets/images/cappuccino.jpg">
-                    </div>
+                      <img src="Assets/images/Slidepic1.jpg" class="background-image2" alt="slide2">
+                      <h1 class="head-title2">"I'D RATHER TAKE A COFFEE <br> THAN COMPLAINING."</h1>
                     
-                    <div class="content3">
-                      <h3 class="product-name">Special Cappucino</h3>
-                      <span class="product-price ">$3.10</span>
-                      <button class="order-btn">Order</button>
-                      <button class="addCart">Add to Cart</button>
-                      
-                    </div>
+                  
+                 
+              </div>
+              <div class="carousel-item">
+                  <img src="Assets/images/Slidepic2.jpg" class="background-image3" alt="slide3">
+              </div>
+          </div>
+       
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+       </div>
+      
+      </div>
+    
+
+<!--===HOME PAGE END===-->
+
+    
+    <!--===ABOUT SECTION START====-->
+    <section class="abt-section" id="about">
+
+      <div class="abt-image">
+        <img src="Assets/images/abt-img2.jpg" data-aos="fade-down"/>
+      </div>
+
+      <div class="abt-container">
+        <div class="row">
+          <div class="content">
+            <h1 class="abt-title "data-aos="fade-down">ABOUT HANGOVER</h1>
+            <hr class="line mx-auto " data-aos="fade-down">
+            <p class="title-p" data-aos="fade-down">HOME/<span data-aos="fade-down">ABOUT US</span></p>
+
+            <div class="abt-content">
+              <h3 class="abt-header2" data-aos="fade-down"> HOW WE STARTED
+              </h3>
+
+               <div class="container-story">
+                <h3 class="abt-story" data-aos="fade-down"> OUR STORY</h3>
+
+                <p class="justify-text"  data-aos="fade-down">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                <br>Debitis odit voluptatum adipisci deserunt nam reprehenderit? Voluptate, 
+                dolore, saepe <br>consequuntur quia, aliquid nostrum debitis molestias assumenda 
+                ipsam corrupti ab quod odio!</p>
+              
+               <div class="abt-checked" data-aos="fade-down">
+                
+                <h4><span class="checkmarked " data-aos="fade-down" >✓</span> What is Lorem Ipsum Lorem Ipsum is simply.</h4>
+          
+                <h4><span class="checkmarked" data-aos="fade-down" >✓</span>What is Lorem Ipsum Lorem Ipsum is simply.</h4>
+  
+                <h4><span class="checkmarked" data-aos="fade-down">✓</span>What is Lorem Ipsum Lorem Ipsum is simply.</h4>
                 </div>
-
-               
-                <i class="fas fa-angle-left arrowLeft "></i>
-                <i class="fas fa-angle-right arrowRight"></i>
-                <button class="show-more">Show more</button>
-
+               </div>
+              
+                 
+            </div>
+  
+  
+            </div>
             
           
-                
-                </div>
+      </section>
+        <!--Menu Start-->
+          <section class="menu-section" id="menu">
 
-                
+            <div class="heading">
+              <h2 data-aos="fade-down"> Our Menu</h2>
+              <hr class="line mx-auto" data-aos="fade-down">
 
+              <h3 data-aos="fade-down">"Consider <span>Ordering Now!"</span></h3>
+            </div>
+
+            
+            <div class="coffee-menu js-menu">
+
+              <div class="col">
+                <div class="row">
+      
               </div>
 
+            </div>
+    
+          </section>
+
+
+          <!--Menu End-->
+          
+          <!--Reservation starts here -->
+
+          <section class="reservation-section" id="reservation">
+
+            <img src="Assets/images/background-table.jpg" 
+            class="reservation-back-img">
+             
+              <!--Left content-->
+          <div class="left-content-container">
+              <div class="col">
+                <div class="row">
+                  
+                  <div class="box-container">
+                    <h1>With no hustle make 
+                      <span>online reservation 
+  
+                      </span>
+                    </h1>
+                  </div>
+                 
+                  
+                </div>
+              </div>
+
+          </div>
+
+            <!--Right content-->
+       
+          <div class="main-content-container">
+            <div class="col">
+              <div class="row">
+    
+                 
+                <form action="" method="post">
+                  <h1 class="reservation-title">RESERVE NOW!</h1>
                 
-               
+                  <div class="fill-up-container">
+                    
+                    
+                      <input class="input-field" type="text" 
+                      placeholder="enter full name" style="color: var(--light-color);" name="email">
+                    
+                    
+                    <input class="input-field" type="text" 
+                    placeholder="enter contact" style="color: var(--light-color);" name="email">
+
+                    
+                    <input class="input-field"style="color: var(--light-color);" type="text" 
+                    placeholder="enter email" name="email">
 
 
-              
-            </section>
+                    <div class="calendar-container">
+                       <h4>Select date & time:</h4>
+
+                       <input type="datetime-local" 
+                            id="Test_DatetimeLocal">
+                    </div>
 
 
-            <!--Menu End-->
-            
+                     <div class="seat-container">
+                       <select style="color: var(--light-color);" >
+                        <i class="ri-sofa-fill"></i>
+                        <option  value="0">Seats:</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        
+                       </select>
+                       <button class="submit-btn">Submit</button>
+                     </div>
+
+                    
+                  </div>
+                  
+                  
+                </form>
+
+              </div>
+            </div>
+          </div>
+                   
+                    
+    
+
+    
+          </section>
+
          
-            <script  type="module" 
-            src="./Scripts/coffee.js"></script>
 
-            
+          <!--Reservation Ends here-->
 
-      <!-- Optional JavaScript; choose one of the two! -->
+          <!-- === Footer Start === -->
+<footer class="footer">
+  <div class="footer-container">
+    
+    <!-- Logo + About -->
+    <div class="footer-col">
+      <img src="Assets/images/Logo-c.png" alt="Hangover Coffee" class="footer-logo">
+      <p class="purpose">Serving freshly brewed coffee and delicious treats since day one.  
+      Your daily dose of energy & comfort.</p>
+    </div>
 
-  <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#reservation">Reservation</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p><i class="bi bi-geo-alt-fill"></i> 123 Coffee St, Manila</p>
+      <p><i class="bi bi-telephone-fill"></i> +63 912 345 6789</p>
+      <p><i class="bi bi-envelope-fill"></i> hangovercoffee@email.com</p>
+    </div>
+
+    <!-- Social Media -->
+    <div class="footer-col">
+      <h4>Follow Us</h4>
+      <div class="footer-socials">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-twitter"></i></a>
+        <a href="#"><i class="bi bi-tiktok"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Hangover Coffee. All Rights Reserved.</p>
+  </div>
+</footer>
+<!-- === Footer End === -->
+
+          
+          <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+          <script type="module" src="./Scripts/coffee.js"></script>
+
+          <script src="./Scripts/animation.js"></script>
+
+          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+ 
 
 
-
-      <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
-    </body>
-  </html>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  -->
+  </body>
+</html>

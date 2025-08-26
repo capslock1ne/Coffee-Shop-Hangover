@@ -1,9 +1,7 @@
-export let cart = JSON.parse(localStorage.getItem('cart'));
-
-
-if (!cart) {
-
-    cart = [{
+export let cart  = JSON.parse(localStorage.getItem('cart'));
+        
+if (!cart){
+    cart =  [{
         productId: 'product1',
         quantity: 1,
     },{
@@ -23,69 +21,49 @@ if (!cart) {
     
 }
 
-
-  
-
-
-
-function saveToStorage(){
-    localStorage.setItem
-    ('cart', JSON.stringify(cart));
+function saveToStorage() {
+    localStorage.setItem('cart', JSON.stringify(cart));
 }
 
+export function addToCart(productId) {
+    let matchingItem = cart.find(cartItem => productId === cartItem.productId);
 
-
-export function addToCart(productId){
-
-    let matchingItem;
-          
-        /*check the product if it's already in the cart*/
-         cart.forEach((cartItem) =>{
-            if (productId === cartItem.productId){
-                matchingItem = cartItem;
-            }
-         });
-
-         if (matchingItem) {
-            matchingItem.quantity += 1;
-         }else{
-            cart.push({
-                productId: productId,
-                quantity: 1
-             });
-         }
-         saveToStorage();
-
-         
-}
-
-
-export function updateCartQuantity(){
-    let cartQuantity = 0;
-
-    cart.forEach((cartItem) =>{
-        cartQuantity +=  cartItem.quantity ;
-    });
-     
-    document.querySelector('.js-quantity-count').innerHTML = 
-    cartQuantity;
-}
-saveToStorage();
-
-
-export function removeFromCart (productId){
-    const newCart = [];
-
-
-    cart.forEach((cartItem) => {
-        if(cartItem.productId !== productId ){
-            newCart.push(cartItem);
-        }
-    });
-    
-    cart = newCart;
-
+    if (matchingItem) {
+        matchingItem.quantity += 1;
+    } else {
+        cart.push({ productId, quantity: 1 });
+    }
     saveToStorage();
+    console.log(cart);
+
+    
+    
+    
 }
+
+ export function decreaseQuantity(productId){
+
+    let matchingItem = cart.find(cartItem => productId === cartItem.productId);
+
+    if(matchingItem ) {
+        if (matchingItem.quantity > 1) {
+            matchingItem.quantity -= 1;
+        } else {
+            removeFromCart(productId);
+        }
+        saveToStorage();
+    }
+     
+ }
+
+// Remove a product from the cart
+export function removeFromCart(productId) {
+    cart = cart.filter(cartItem => cartItem.productId !== productId);
+    saveToStorage();
+    console.log(cart);
+    
+   
+}
+
 
 
