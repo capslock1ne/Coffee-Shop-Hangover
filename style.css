@@ -620,6 +620,15 @@
     }
 
 
+#notification-container {
+  display: flex;
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: rgb(26, 145, 52);
+  z-index: 9999;
+}
+
 
 
 
@@ -898,9 +907,13 @@
      
     }
 
-  .bi-bag-heart-fill {
+  .add-to-cart button {
    
-       font-size: 2rem;
+       font-size: 1.1rem;
+      font-family: 'Signika';
+       padding: 1rem 2rem;
+      background: transparent;
+       border: 1px solid var(--main-txt1-color);
        cursor: pointer;
        transition: 0.3s ease;
       
@@ -909,8 +922,9 @@
 
     
   
-    .bi-bag-heart-fill:hover {
-        color: var(--main-txt2-color);
+    .add-to-cart button:hover {
+        background-color:var(--main-txt5-color);
+      color: var(--main-txt3-color);
 
     }
 /*
@@ -1362,6 +1376,7 @@
   font-size: 1.5rem;
   border-bottom: 2px solid var(--light-color);
   color: var(--light-color);
+  margin-top: 4rem;
   height: 50px;
   width: 350px;
 }

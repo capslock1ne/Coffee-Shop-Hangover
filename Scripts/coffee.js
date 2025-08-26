@@ -1,6 +1,6 @@
 
 
-  import {cart, addToCart} from '../data/cart.js';
+  import {cart, addToCart,notification} from '../data/cart.js';
   import {products, ProductElement} from '../data/product.js';
   import { transparentHeader } from '../data/transparent-header.js';
   import {formatCurrency } from './utils.js/money.js';
@@ -16,11 +16,11 @@
     <img src="${product.image}" class = "image">
      
     <div class = "add-to-cart">
-    <i class="bi bi-bag-heart-fill  js-add-to-cart" title = "add to cart"
+    <button class="  js-add-to-cart" title = "add to cart"
     data-product-id = "${product.id}">
-    
+       Add to cart
       
-      </i>
+      </button>
       </div>
       
       
@@ -93,9 +93,9 @@
 
        
 
-        
 
         addToCart(productId);
+        notification(productId);
         updateCartQuantity();
 
         
@@ -105,32 +105,12 @@
   
 
 
-
   transparentHeader();
 
 
 
 
 
-
-
-  /* Expanding search button 
-
-  const toggleSearch = (search, button) => {
-    const searchBar = document.getElementById(search),
-          searchButton =  document.getElementById(button)
-
-          searchButton.addEventListener('click', () =>{
-            searchBar.classList.toggle('show-search')
-          });
-  }
-
-  toggleSearch('search-bar', 'search-button');
-   
-
- 
-
-/*Hover effect addtocart */
 
 
 
